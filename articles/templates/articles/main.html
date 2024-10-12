@@ -9,9 +9,9 @@
     <h1>My Diary</h1>
     <ul>
         {% for post in posts %}
-            <li>Number: {{ post.num }} - Title: {{ post.title }}</li>
+            <p>No. {{ post.num }}: {{ post.title }}</p>
         {% empty %}
-            <li>No posts available.</li>
+            <p>No posts available.</p>
         {% endfor %}
     </ul>
 </body>
