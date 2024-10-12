@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls), # superuser: (id) admin (pwd) admin
     path('users/', include('users.urls')),
     path('', include('articles.urls')), # diary's main page (app name: articles)
 ]

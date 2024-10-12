@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Post
+
 
 def index(request):
-    return HttpResponse("Main Page")
+    posts = Post.objects.all()
+    return render(request, 'articles/main.html', {'posts': posts})

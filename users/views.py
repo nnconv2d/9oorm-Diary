@@ -3,8 +3,10 @@ from django.contrib.auth import login, authenticate
 from django.contrib import messages
 from django.contrib.auth.forms import AuthenticationForm
 
+
 def home_request(request):
     return render(request, 'users/home.html')
+
 
 def login_request(request):
     if request.method == 'POST':
